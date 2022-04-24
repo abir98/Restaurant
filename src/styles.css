@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "../src/assets/files/css/animate.css";
+@import "../src/assets/files/css/baguetteBox.min.css";
+@import "../src/assets/files/css/bootstrap.min.css";
+@import "../src/assets/files/css/classic.css";
+@import "../src/assets/files/css/classic.date.css";
+@import "../src/assets/files/css/classic.time.css";
+@import "../src/assets/files/css/custom.css";
+@import "../src/assets/files/css/font-awesome.min.css";
+@import "../src/assets/files/css/responsive.css";
+@import "../src/assets/files/css/style.css";
+@import "../src/assets/files/css/superslides.css";
+@import "../src/assets/files/css/styleres.css";
+
+@import '~ngx-toastr/toastr.css';
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,100 @@
+<div  style="background-image: url(https://firebasestorage.googleapis.com/v0/b/ouzzo-f0acc.appspot.com/o/sliderone.jpg?alt=media&token=ce061841-945c-4c17-a321-8927d98a916e);"> 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<section class="vh-100 gradient-custom" >
+	<div class="container py-5 h-100">
+	  <div class="row justify-content-center align-items-center h-100">
+		<div class="col-12 col-lg-9 col-xl-7">
+		  <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+			<div class="card-body p-4 p-md-5"  >
+			  <h2 class="mb-4 pb-2 pb-md-0 mb-md-5" style="text-align: center;">Registration </h2>
+			  <form #myform="ngForm" (submit)="checkData(myform)" >
+  
+				<div class="row">
+					<div class="group">
+						<mat-form-field>
+							<label for="user" class="label">First Name</label>
+							<input  matInput type="text" name="fname" class="input" ngModel required minlength="3" #fname="ngModel" >
+							<mat-error *ngIf="fname.invalid">First Name is Required !</mat-error>
+						
+						</mat-form-field>
+					</div>
+  
+				  
+					<div class="group">
+						<mat-form-field>
+							<label for="user" class="label">Last Name</label>
+							<input  matInput type="text" name="lname" class="input" ngModel required minlength="3" #lname="ngModel" >
+							<mat-error *ngIf="fname.invalid">Last Name is Required !</mat-error>
+						</mat-form-field>
+					</div>
+					<div class="group">
+						<mat-form-field>
+							<label for="user" class="label">Email</label>
+							<input  matInput type="text" name="email" class="input" ngModel required minlength="3" #email="ngModel" email>
+							<mat-error *ngIf="email.invalid">Email  is Required !</mat-error>
+							
+						</mat-form-field>
+					</div>
+					<div class="group">
+						<mat-form-field>
+							<label for="user" class="label">Phone Number </label>
+							<input  matInput type="text" name="phone" class="input" ngModel required minlength="3" #phone="ngModel" >
+							<mat-error *ngIf="phone.invalid"> Phone Number is Required !</mat-error>
+						</mat-form-field>
+					</div>
+					<div class="group">
+						<mat-form-field>
+							<label for="user" class="label">Adress</label>
+							<input  matInput type="text" name="adress" class="input" ngModel required minlength="3" #adrs="ngModel" >
+							<mat-error *ngIf="adrs.invalid"> Adress is Required !</mat-error>
+						</mat-form-field>
+					</div>
+					<div class="group">
+						<mat-form-field>
+							<label for="user" class="label">Password</label>
+							<input  matInput type="password" name="password" class="input" ngModel required minlength="3" #pass="ngModel" >
+							<mat-error *ngIf="pass.invalid">Password is Required !</mat-error>
+						</mat-form-field>
+					</div>
+					<div class="group">
+						<mat-form-field>
+							<label for="user" class="label">Repeat Password</label>
+							<input  matInput type="password" name="Rpassword" class="input" ngModel required minlength="3" #Rpass="ngModel" >
+							<mat-error *ngIf="Rpass.invalid"> Repeat Password is Required !</mat-error>
+						</mat-form-field>
+					</div>
+
+				
+				   </div>
+  
+				
+				
+					<div class="box" style="margin-top: 20px;"> <button class="btn btn-primary" mat-button   type="submit"  >Registre</button></div>
+			
+					<br>
+					<div class="box">
+						<hr  style="width: 50%;">
+						<br>
+					</div>
+					<div class="box"><a href="" [routerLink]="['/loginres']">Already Registred ! Login Here </a>  </div>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+    <br>
+    <br>
+	<br>
+<br> <br>
+<br> <br>
+<br> <br>
+<br> <br>
+<br>
+</div>

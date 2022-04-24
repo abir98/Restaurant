@@ -1,0 +1,14 @@
+mat-form-field{
+    width:90%;
+    margin-left: 25px;
+}
+div[class*=box] {
+    height: 33.33%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  

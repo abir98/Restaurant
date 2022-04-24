@@ -1,0 +1,99 @@
+<div  style="background-image: url(https://firebasestorage.googleapis.com/v0/b/ouzzo-f0acc.appspot.com/o/sliderone.jpg?alt=media&token=ce061841-945c-4c17-a321-8927d98a916e);"> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> <br> <br> <br>
+   
+
+<div class="login-wrap">
+	<div class="login-html" >
+		<input id="tab-1" type="radio" name="tab" #someInput class="sign-in" checked><label for="tab-1" class="tab"(click)="activate(1)">Sign In</label>
+		<input id="tab-2" type="radio" name="tab" #someInput2 class="sign-up" ><label for="tab-2" class="tab" (click)="activate(2)">Sign Up</label>
+		<div class="login-form" >
+			
+			<form (submit)="onSingin(siginform)" *ngIf="isactive ==1"  #siginform="ngForm">
+			<div class="sign-in-htm">
+				<div class="group">
+					<mat-form-field>
+						<label for="user" class="label">Email</label>
+						<input  matInput type="text" name="email" class="input" ngModel required minlength="3" #email="ngModel" email>
+						<mat-error *ngIf="email.invalid">Email is Required !</mat-error>
+					</mat-form-field>
+				</div>
+				
+				<div class="group">
+					<mat-form-field>
+						<label for="user" class="label">Password</label>
+						<input  matInput type="password" name="Password" class="input" ngModel required minlength="8" #password="ngModel">
+						<mat-error *ngIf="password.invalid">Password is Required !</mat-error>
+					</mat-form-field>
+				</div>
+				<br>
+				<div class="group">
+					
+					<input id="check" type="checkbox" class="check" checked>
+					<label for="check"><span class="icon"></span> Keep me Signed in</label>
+				</div>
+				<div class="group">
+					<input type="submit" mat-raised-button class="button" value="Sign In">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="#forgot">Forgot Password?</a>
+				</div>
+				
+			</div>
+		</form>
+          	<form  *ngIf="isactive ==2" (submit)="onSingup(sigupform)" #sigupform="ngForm">
+			<div class="sign-up-htm">
+				<div class="group">
+					<mat-form-field>
+						<label for="user" class="label">Username</label>
+						<input  matInput type="text" name="Username" class="input" ngModel required minlength="3" #user="ngModel">
+						<mat-error *ngIf="user.invalid">Username is Required !</mat-error>
+					</mat-form-field>
+				</div>
+				<div class="group">
+					<mat-form-field>
+						<label for="user" class="label">Password</label>
+						<input  matInput type="password" name="Password" class="input" ngModel required minlength="8"  #pass="ngModel">
+						<mat-error *ngIf="pass.invalid">Password is Required !</mat-error>
+					</mat-form-field>
+				</div>
+				<div class="group">
+					<mat-form-field>
+						<label for="user" class="label">Repeat Password</label>
+						<input  matInput type="password" name="RepeatPassword"  class="input" ngModel required minlength="8" #passr="ngModel">
+						<mat-error *ngIf="passr.invalid">Password is Required !</mat-error>
+					</mat-form-field>
+				</div>
+				<div class="group">
+
+					<mat-form-field>
+						<label for="user" class="label">Email Address</label>
+						<input  matInput type="email" name="Email" class="input" ngModel required minlength="8" #mail="ngModel" email>
+						<mat-error *ngIf="mail.invalid">Email is Required !</mat-error>
+					</mat-form-field>
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Sign Up" >
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<label for="tab-1" (click)="gobacktoSignin()">Already Member?</label>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+<br>
+
+

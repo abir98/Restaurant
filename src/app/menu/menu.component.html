@@ -1,0 +1,143 @@
+
+  <div class="menu-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading-title text-center">
+                    <h2>Special restaurants for you </h2>
+                    <p>Here you can find the different services provided by our restaurants</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row inner-menu-box">
+    <div class="col-3">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true" (click)="load('All')">All</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false" (click)="load('Drinks')">Drinks</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false" (click)="load('Lunch')">Lunch</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false" (click)="load('Dinner')">Dinner</a>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-4 col-md-6 special-grid drinks"  *ngFor="let item of tab">
+            <div class="gallery-single fix">
+                <img src="{{item.url}}" class="img-fluid"  alt="Image">
+                <div class="why-text">
+                    <h4>{{item.desc}}</h4>
+                    <p>{{item.info}}</p>
+                    <h5>{{item.price}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    	<!-- Start Gallery -->
+	<div class="gallery-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>Gallery</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+					</div>
+				</div>
+			</div>
+			<div class="tz-gallery">
+				<div class="row">
+					<div class="col-sm-12 col-md-4 col-lg-4">
+						<a class="lightbox" href="https://firebasestorage.googleapis.com/v0/b/ouzzo-f0acc.appspot.com/o/images%2Fgallery-img-01.jpg?alt=media&token=42a2a49f-4eed-4ca0-9474-8afcdea71780">
+							<img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/ouzzo-f0acc.appspot.com/o/images%2Fgallery-img-01.jpg?alt=media&token=42a2a49f-4eed-4ca0-9474-8afcdea71780" alt="Gallery Images">
+						</a>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-4">
+						<a class="lightbox" href="https://firebasestorage.googleapis.com/v0/b/ouzzo-f0acc.appspot.com/o/images%2Fgallery-img-02.jpg?alt=media&token=0c4eb099-ed31-426e-b78e-6b732b6136d4">
+							<img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/ouzzo-f0acc.appspot.com/o/images%2Fgallery-img-02.jpg?alt=media&token=0c4eb099-ed31-426e-b78e-6b732b6136d4" alt="Gallery Images">
+						</a>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-4">
+						<a class="lightbox" href="https://firebasestorage.googleapis.com/v0/b/ouzzo-f0acc.appspot.com/o/images%2Fgallery-img-04.jpg?alt=media&token=ec7c70b2-1886-415c-9e05-da474d44cc2e">
+							<img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/ouzzo-f0acc.appspot.com/o/images%2Fgallery-img-04.jpg?alt=media&token=ec7c70b2-1886-415c-9e05-da474d44cc2e" alt="Gallery Images">
+						</a>
+					</div>
+					<div class="col-sm-12 col-md-4 col-lg-4">
+						<a class="lightbox" href="https://firebasestorage.googleapis.com/v0/b/ouzzo-f0acc.appspot.com/o/images%2Fgallery-img-03.jpg?alt=media&token=e1a1179b-7ba3-4cd6-9cdf-52ee3706ab9b">
+							<img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/ouzzo-f0acc.appspot.com/o/images%2Fgallery-img-03.jpg?alt=media&token=e1a1179b-7ba3-4cd6-9cdf-52ee3706ab9b" alt="Gallery Images">
+						</a>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-4">
+						<a class="lightbox" href="https://firebasestorage.googleapis.com/v0/b/ouzzo-f0acc.appspot.com/o/images%2Fgallery-img-05.jpg?alt=media&token=a4b871fe-78d0-4e43-b04d-d365ead3e58b">
+							<img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/ouzzo-f0acc.appspot.com/o/images%2Fgallery-img-05.jpg?alt=media&token=a4b871fe-78d0-4e43-b04d-d365ead3e58b" alt="Gallery Images">
+						</a>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-4">
+						<a class="lightbox" href="https://firebasestorage.googleapis.com/v0/b/ouzzo-f0acc.appspot.com/o/images%2Fgallery-img-06.jpg?alt=media&token=04c9ce36-e0ef-475c-8e66-2aeff189e6e5">
+							<img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/ouzzo-f0acc.appspot.com/o/images%2Fgallery-img-06.jpg?alt=media&token=04c9ce36-e0ef-475c-8e66-2aeff189e6e5">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Gallery -->
+
+	<!-- Start Customer Reviews -->
+	<div class="customer-reviews-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>Customer Reviews</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 mr-auto ml-auto text-center">
+					<div id="reviews" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner mt-4">
+							<div class="carousel-item text-center active">
+								<div class="img-box p-1 border rounded-circle m-auto">
+									<img class="d-block w-100 rounded-circle" src="https://firebasestorage.googleapis.com/v0/b/ouzzo-f0acc.appspot.com/o/images%2Fquotations-button.png?alt=media&token=58abee75-c3ca-41be-83d8-9fa385b59bff" alt="">
+								</div>
+								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Paul Mitchel</strong></h5>
+								<h6 class="text-dark m-0">Web Developer</h6>
+								<p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+							</div>
+							<div class="carousel-item text-center">
+								<div class="img-box p-1 border rounded-circle m-auto">
+									<img class="d-block w-100 rounded-circle" src="https://firebasestorage.googleapis.com/v0/b/ouzzo-f0acc.appspot.com/o/images%2Fquotations-button.png?alt=media&token=58abee75-c3ca-41be-83d8-9fa385b59bff" alt="">
+								</div>
+								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Steve Fonsi</strong></h5>
+								<h6 class="text-dark m-0">Web Designer</h6>
+								<p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+							</div>
+							<div class="carousel-item text-center">
+								<div class="img-box p-1 border rounded-circle m-auto">
+									<img class="d-block w-100 rounded-circle" src="https://firebasestorage.googleapis.com/v0/b/ouzzo-f0acc.appspot.com/o/images%2Fquotations-button.png?alt=media&token=58abee75-c3ca-41be-83d8-9fa385b59bff" alt="">
+								</div>
+								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Daniel vebar</strong></h5>
+								<h6 class="text-dark m-0">Seo Analyst</h6>
+								<p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#reviews" role="button" data-slide="prev">
+							<i class="fa fa-angle-left" aria-hidden="true"></i>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#reviews" role="button" data-slide="next">
+							<i class="fa fa-angle-right" aria-hidden="true"></i>
+							<span class="sr-only">Next</span>
+						</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Customer Reviews -->
+
