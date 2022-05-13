@@ -18,7 +18,7 @@
     display: table;
     clear: both;
   }
-  
+
   .slides-navigation {
     margin: 0 auto;
     position: absolute;
@@ -36,7 +36,7 @@
   .slides-navigation a.next {
     right: 0;
   }
-  
+
   .slides-pagination {
     position: absolute;
     z-index: 3;
@@ -55,7 +55,7 @@
     *vertical-align: auto;
     zoom: 1;
     *display: inline;
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
+
     margin: 2px;
     overflow: hidden;
     text-indent: -99999px;
@@ -63,12 +63,12 @@
   .slides-pagination a.current {
     background: #222;
   }
-  
+
 
   /* Slider------------------------------------------------------------------*/
 
 .cover-slides{
-	height: 100vh;
+	height: 10vh;
 }
 .slides-navigation a {
 	background: #d65106;

@@ -31,6 +31,9 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { DialogLoginComponent } from './dialog-login/dialog-login.component';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import { OwnersigninComponent } from './ownersignin/ownersignin.component';
+import { ReservationComponent } from './reservation/reservation.component';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 @NgModule({
   declarations: [
@@ -48,8 +51,9 @@ import { OwnersigninComponent } from './ownersignin/ownersignin.component';
     ContactComponent,
     RestaurantownerComponent,
     DialogLoginComponent,
-    OwnersigninComponent
-  
+    OwnersigninComponent,
+    ReservationComponent
+
   ],
   imports: [
     BrowserModule,
@@ -66,9 +70,11 @@ import { OwnersigninComponent } from './ownersignin/ownersignin.component';
     MatFormFieldModule,
     MatDatepickerModule,
     MatDialogModule,
-    MatBottomSheetModule
+    MatBottomSheetModule,
+    MatDatepickerModule
   ],
-  providers: [{provide: HTTP_INTERCEPTORS, useClass:AuthInter,multi:true}],
+  providers: [{provide: HTTP_INTERCEPTORS, useClass:AuthInter,multi:true},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

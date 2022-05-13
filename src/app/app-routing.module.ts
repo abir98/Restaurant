@@ -4,6 +4,7 @@ import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { OwnersigninComponent } from './ownersignin/ownersignin.component';
+import { ReservationComponent } from './reservation/reservation.component';
 import { RestaurantownerComponent } from './restaurantowner/restaurantowner.component';
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path:"contact",component: ContactComponent},
   {path:"login",component: LoginComponent},
   {path:"loginres",component: OwnersigninComponent},
-  {path:"signupres",component: RestaurantownerComponent}
+  {path:"signupres",component: RestaurantownerComponent},
+  {path:"reservation",component:ReservationComponent},
 ];
 
 @NgModule({
