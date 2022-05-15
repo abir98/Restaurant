@@ -14,7 +14,7 @@ mongoose.connect("mongodb://localhost:27017/Restaurant", { useNewUrlParser: true
         console.log("Connection To DataBase Failed !!");
     });
 
-app.use(bodyparser.json());
+    app.use(bodyparser.urlencoded({ extended: true }));
 app.use((req, res, next) => {
         res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader("Access-Control-Allow-Headers",
@@ -28,9 +28,12 @@ app.use((req, res, next) => {
 const UserRoute = require('./ClientRoute/ClientRt')
 const OwnerRoute = require('./ClientRoute/Owner')
 
+const reservation = require('./ClientRoute/Reservation')
+
 
 app.use('/client', UserRoute)
 app.use('/owner',OwnerRoute)
+app.use("/reservation", reservation)
 
 
 app.listen(9999, () => {
